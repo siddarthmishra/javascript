@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Logical Operators</title>
+		<script>
+		var x = parseInt(prompt("Enter marks (0-100) in subject-1", "35"));
+		var isFail = false, grade;
+		if(x < 35 || x > 100)
+			isFail = true;
+		if(!isFail) {
+			document.write("<br/>Result : Pass");
+			if(x >= 70 && x <= 100) {
+				grade = "A";
+			} else if(x >= 60 && x < 70) {
+				grade = "B";
+			} else if(x >= 35 && x < 60) {
+				grade = "C";
+			}
+		} else {
+			grade = "F";
+			document.write("<br/>Result : Fail");
+		}
+		document.write("<br/>Grade : " + grade);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

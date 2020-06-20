@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Local and Global Variables</title>
+		<script>
+		var y = 30; // global variable
+			function fun1(){
+				var x = 20; // local variable to fun1()
+				document.write("Inside fun1()<br/> x : " + x + "<br/>");
+				document.write("Inside fun1()<br/> y : " + y + "<br/>");
+			}
+			function fun2(){
+				var x = 50; // local variable to fun2()
+				document.write("Inside fun2()<br/> x : " + x + "<br/>");
+				document.write("Inside fun2()<br/> y : " + y + "<br/>");
+			}
+			fun1();
+			document.write("<br/>Outside fun1() and fun2()<br/> y : " + y + "<br/><br/>");
+			fun2();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>Random</title>
+		<script>
+			var x = parseInt(prompt("Enter any number"));
+			var factor = "1";
+			for(i = 1; i <= x.toString().length; i++) {
+				factor = factor + "0";
+			}
+			var random = Math.random();
+			var y = parseInt(random * factor);
+			document.write("Random value :  " + y);
+			document.write("<br/>Entered Value : " + x);
+			if(x > y) {
+				alert("You WON!!!");
+			} else if (x == y) {
+				alert("It's a tie!!!")
+			} else {
+				alert("You LOST!!!");
+			}
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

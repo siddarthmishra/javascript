@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Break - Continue</title>
+	<script>
+		var x = parseInt(prompt("Enter any positive number", "10"));
+		document.write("<br/>Break Example : break at x/2. If x = 10, then break at 5");
+		for(var i = 1; i <= x; i++) {
+			if(i == x/2)
+				break;
+			document.write("<br/>Number is " + i);
+		}
+
+		document.write("<br/><br/>Continue Example : Continue at x/2. If x = 10, the skip 5");
+		for(var i = 1; i <= x; i++) {
+			if(i == x/2)
+				continue;
+			document.write("<br/>Number is " + i);
+		}
+	</script>
+</head>
+	<body>
+	</body>
+</html>

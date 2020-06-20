@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Break - Continue</title>
+	<script>
+		var x = parseInt(prompt("Enter any positive number", "10"));
+
+		document.write("<br/>Using for loop");
+		for(var i = 1; i <= x; i++) {
+			if(i % 3 == 0)
+				continue;
+			document.write("<br/>Number is " + i);
+		}
+		document.write("<br/><br/>Using while loop");
+		var j = 1;
+		while(j <= x){
+			if(j % 3 == 0){
+				j++;
+				continue;
+			}
+			document.write("<br/>Number is " + j);
+			j++;
+		}
+
+		document.write("<br/><br/>Using do-while loop");
+		var i = 1;
+		do {
+			if(i % 3 == 0){
+				i++;
+				continue;
+			}
+			document.write("<br/>Number is " + i);
+			i++;
+		} while(i <= x);
+	</script>
+</head>
+	<body>
+	</body>
+</html>
