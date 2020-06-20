@@ -3,37 +3,9 @@
 	<head>
 		<meta charset="ISO-8859-1">
 		<title>Switch</title>
-		<script>
-		var x = parseInt(prompt("Enter any number between 1-7", "1-7"));
-		var day;
-		switch(x) {
-			case 1:
-				day = "MONDAY";
-				break;
-			case 2:
-				day = "TUESDAY";
-				break;
-			case 3:
-				day = "WEDNESDAY";
-				break;
-			case 4:
-				day = "THURSDAY";
-				break;
-			case 5:
-				day = "FRIDAY";
-				break;
-			case 6:
-				day = "SATURDAY";
-				break;
-			case 7:
-				day = "SUNDAY";
-				break;
-			default:
-				day = "INVALID OPTION";
-		}
-		document.write("<br/>Day : " + day);
+		<script type="text/javascript" src="../../javascript/switch.js" >
 		</script>
 	</head>
-	<body>
+	<body onload="switchFun()" >
 	</body>
 </html>

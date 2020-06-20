@@ -3,31 +3,9 @@
 	<head>
 		<meta charset="ISO-8859-1">
 		<title>Assignment Function</title>
-		<script>
-			var subjects = ["Maths", "Physics", "Chemistry"];
-			var total = 0, average = 0, grade;
-			for(i = 0; i < subjects.length; i++){
-				var marks = parseInt(prompt("Enter marks (0-100) in " + subjects[i], "0-100"));
-				total+=marks;
-			}
-			function calculateAverage(tot, subs){
-				return tot/subs;
-			}
-			average = parseInt(calculateAverage(total, subjects.length));
-			function getGrade(avg){
-				if(avg >= 90 && avg <= 100){
-					return "A";
-				} else if (avg >= 70 && avg < 90){
-					return "B";
-				} else {
-					return "C";
-				}
-			}
-			grade = getGrade(average);
-			document.write("Total : " + total + "<br/>Average : " + average + "<br/>Grade : " + grade);
+		<script type="text/javascript" src="../../javascript/functions.js" >
 		</script>
 	</head>
-	<body>
-
+	<body onload="assignmentFunction()" >
 	</body>
 </html>

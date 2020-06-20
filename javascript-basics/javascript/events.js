@@ -61,3 +61,27 @@ function handleOnLoad(obj){ // obj is window object
 function handleOnSubmit(){
 	alert("Submitting the form...");
 }
+
+function handleMouseDownEvent(x){
+	x.style.color = "red";
+	x.style.backgroundColor = "yellow";
+	x.innerHTML = "MOUSEDOWN";
+}
+
+function handleMouseUpEvent(y){
+	y.style.color = "yellow";
+	y.style.backgroundColor = "blue";
+	y.innerHTML = "MOUSEUP";
+}
+
+function handleMouseOverEvent(x){
+	x.style.color = "red";
+	x.style.backgroundColor = "yellow";
+	x.innerHTML = "MOUSEOVER";
+}
+
+function handleMouseOutEvent(y){
+	y.style.color = "yellow";
+	y.style.backgroundColor = "blue";
+	y.innerHTML = "MOUSEOUT";
+}
